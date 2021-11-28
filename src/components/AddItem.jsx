@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import '../styles/addItem.css';
+
 class AddItem extends Component {
   handleClick = () => {
     const { product1 } = this.props;
@@ -42,6 +44,7 @@ class AddItem extends Component {
         onClick={ () => this.handleClick() }
         type="button"
         data-testid={ dataTestId }
+        className='button_add_card'
       >
         Adicione no Carrinho
         <span>🛒</span>

@@ -5,6 +5,7 @@ import * as api from '../services/api';
 
 import ProductCard from '../components/ProductCard';
 import List from '../components/List';
+import carrinho from '../images/carrinho-de-compras.png';
 
 class Home extends React.Component {
   constructor(props) {
@@ -63,7 +64,7 @@ class Home extends React.Component {
               to="/shoppingcart"
               data-testid="shopping-cart-button"
             >
-              Carrinho
+              <img src={ carrinho } alt="carrinho_de_compras" width="30px" />
             </Link>
           </form>
           <section className="itemsList">

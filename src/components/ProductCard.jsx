@@ -3,21 +3,22 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import AddItem from './AddItem';
+import '../styles/productCard.css';
 
 class ProductCard extends Component {
   render() {
     const { item } = this.props;
     const { title, thumbnail, price, id } = item;
     return (
-      <div>
+      <div className="con_cards">
         <Link
           to={ `/details/${id}` }
           data-testid="product-detail-link"
         >
-          <div data-testid="product">
-            <span data-testid="shopping-cart-product-name">{ title }</span>
+          <div data-testid="product" className="cont_img_cards">
             <img src={ thumbnail } alt={ title } />
-            <span>{ price }</span>
+            <span data-testid="shopping-cart-product-name">{ title }</span>
+            <span>R$ { price }</span>
           </div>
         </Link>
         <AddItem product1={ item } dataTestId="product-add-to-cart" />
