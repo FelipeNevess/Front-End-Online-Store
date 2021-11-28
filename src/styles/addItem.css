@@ -1,0 +1,12 @@
+.button_add_card {
+  padding: 5px;
+  color: white;
+  background-color: green;
+  font-weight: 400;
+  font-family: monospace;
+  border: 0;
+}
+
+.button_add_card:hover {
+  cursor: pointer;
+}
