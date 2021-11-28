@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Rating } from '@material-ui/lab';
 
 class Review extends Component {
@@ -117,5 +118,9 @@ class Review extends Component {
     );
   }
 }
+
+Review.propTypes = {
+  id: PropTypes.string.isRequired,
+};
 
 export default Review;
