@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import * as api from '../services/api';
 
 class List extends Component {
@@ -45,5 +46,9 @@ class List extends Component {
     );
   }
 }
+
+List.propTypes = {
+  callback: PropTypes.func.isRequired,
+};
 
 export default List;
