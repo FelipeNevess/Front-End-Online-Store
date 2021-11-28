@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import AddItem from './AddItem';
 
@@ -23,5 +24,14 @@ class ProductCard extends Component {
     );
   }
 }
+
+ProductCard.propTypes = {
+  item: PropTypes.shape({
+    title: PropTypes.string,
+    thumbnail: PropTypes.string,
+    price: PropTypes.number,
+    id: PropTypes.string,
+  }).isRequired,
+};
 
 export default ProductCard;
