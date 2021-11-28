@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Review from './Review';
 import AddItem from './AddItem';
 
@@ -60,5 +61,13 @@ class Details extends Component {
     );
   }
 }
+
+Details.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      id: PropTypes.string,
+    }),
+  }).isRequired,
+};
 
 export default Details;
