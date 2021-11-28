@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 class Country extends Component {
   render() {
     const { inputHandler } = this.props;
+
     return (
       <select onChange={ inputHandler } value="country" name="country">
         <option value="AC">Acre</option>
@@ -36,5 +39,9 @@ class Country extends Component {
     );
   }
 }
+
+Country.propTypes = {
+  inputHandler: PropTypes.func.isRequired,
+};
 
 export default Country;
