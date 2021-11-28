@@ -20,7 +20,8 @@ O fron-end-online-store foi um projeto feito durante meu período na trybe, com 
 - JavaScript
 ##### Preparo:
 
-![alt text](http://url/to/img.png)
+- Trello -> https://trello.com/b/zWpp4lFA/projetogrupo6
+
 ##### Equipe:
 - https://github.com/marlondlacerda
 - https://github.com/ingoreichertjr
