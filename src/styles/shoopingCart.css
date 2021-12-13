@@ -1,0 +1,4 @@
+.cot-product-items {
+  display: flex;
+  flex-direction: column-reverse;
+}

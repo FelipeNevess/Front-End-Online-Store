@@ -1,9 +1,11 @@
+import React from 'react';
+import Routes from './pages/routes';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      
+    <div className="App">
+      <Routes />
     </div>
   );
 }
