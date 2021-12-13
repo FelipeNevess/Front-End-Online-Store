@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Country from '../components/Country';
 
+import '../styles/checkout.css';
+
 class Checkout extends Component {
   constructor() {
     super();
@@ -27,16 +29,14 @@ class Checkout extends Component {
       const { name, cpf, email, tel, cep, adress, complement, number,
         citty } = this.state;
       return (
-        <div>
-          <div>
+        <div className="con-form">
+          <div className="header-form">
             <h4>Revise seus Produtos</h4>
-            <div>
-              <span>PRODUTOS</span>
-            </div>
+            <span>PRODUTOS</span>
           </div>
-          <div>
+          <form>
             <h4>Informações do Comprador</h4>
-            <div>
+            <div className="con-body-form">
               <input
                 type="text"
                 data-testid="checkout-fullname"
@@ -111,24 +111,26 @@ class Checkout extends Component {
               />
               <Country inputHandler={ this.inputHandler } />
             </div>
-          </div>
-          <div>
+          </form>
+          <div className="con-method">
             <h4>Método de Pagamento</h4>
-            <label htmlFor="boleto">
-              Boleto
-              <input type="radio" id="boleto" name="payment-method" />
-            </label>
-            <label htmlFor="visa-card">
-              Visa
-              <input type="radio" id="visa-card" name="payment-method" />
-            </label>
-            <label htmlFor="master-card">
-              Master Card
-              <input type="radio" id="master-card" name="payment-method" />
-            </label>
+            <div className="cont-c1">
+              <label htmlFor="boleto">
+                Boleto
+                <input type="radio" id="boleto" name="payment-method" />
+              </label>
+              <label htmlFor="visa-card">
+                Visa
+                <input type="radio" id="visa-card" name="payment-method" />
+              </label>
+              <label htmlFor="master-card">
+                Master Card
+                <input type="radio" id="master-card" name="payment-method" />
+              </label>
+            </div>
           </div>
-          <div>
-            <button type="button">COMPRAR</button>
+          <div className="button-container">
+            <button type="button" className="con-btn">COMPRAR</button>
           </div>
         </div>
       );

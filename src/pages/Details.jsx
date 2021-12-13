@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 import Review from '../components/Review';
 import AddItem from '../components/AddItem';
 
+import carrinho from '../images/carrinho-de-compras.png';
+
+import '../styles/details.css';
+
 class Details extends Component {
   constructor(props) {
     super(props);
@@ -35,26 +39,24 @@ class Details extends Component {
     if (loading) return <div>Carregando...</div>;
 
     return (
-      <div>
+      <div className="cont-details">
         <Link
           className="cart"
           to="/shoppingcart"
           data-testid="shopping-cart-button"
         >
-          Carrinho
+          <img src={ carrinho } alt="carrinho_de_compras" width="30px" />
         </Link>
-        <div>
-          <span data-testid="product-detail-name">{ product.title }</span>
+        <div className="items-info">
           <img src={ product.thumbnail } alt="product details" />
           <span>{ product.price }</span>
+          <span data-testid="product-detail-name">{ product.title }</span>
           <h4>Especificações Técnicas</h4>
           <AddItem product1={ product } dataTestId="product-detail-add-to-cart" />
           <Link
             to="/"
           >
-            <button type="button">
-              Voltar
-            </button>
+            Voltar
           </Link>
         </div>
         <Review id={ product.id } />

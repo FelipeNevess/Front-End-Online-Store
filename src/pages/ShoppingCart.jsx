@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import ProductCard from '../components/ProductCard';
 
+import '../styles/shoopingCart.css';
+
 class ShoppingCart extends Component {
   constructor(props) {
     super(props);
@@ -18,12 +20,12 @@ class ShoppingCart extends Component {
   restoreLocalStorage = () => {
     const listaCompras = JSON.parse(localStorage.getItem('shoppingCart') || '[]');
     const list = listaCompras.map((item) => (
-      <div key={ item.id }>
+      <div key={ item.id } className="cot-product-items">
         <ProductCard
           key={ item.id }
           item={ item }
         />
-        <span data-testid="shopping-cart-product-quantity">
+        <span data-testid="shopping-cart-product-quantity" className="quatidy">
           { item.Qty }
         </span>
       </div>
@@ -39,7 +41,8 @@ class ShoppingCart extends Component {
         <Link to="/checkout">
           <button type="button" data-testid="checkout-products">Finalizar Compras</button>
         </Link>
-      </div>);
+      </div>
+    );
     return (
       <section>
         { list.length === 0 ? (

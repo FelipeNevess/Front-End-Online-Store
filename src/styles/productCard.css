@@ -7,6 +7,7 @@
   align-items: center;
   padding: 0.3em;
   border: 1px solid #d4d4d4;
+  min-height: 300px;
   border-radius: 4px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
