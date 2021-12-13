@@ -5,6 +5,8 @@
 
 O fron-end-online-store foi um projeto feito durante meu período na trybe, com uma equipe de 5 pessoas, esse foi o meu primeiro projeto em grupo, que me proporcionou grandes aprendizagens. O objetivo do projeto era criar uma especie de "clone" do Mercado livre, com o uso de sua API, com logicas de adicionar algo no carrinho e finalização de compra. Minha equipe se saiu muito bem, todos se dedicaram ao máximo.
 
+#### Um dos primeiros projetos em react
+
 ##### Aprendizagens:
 -  Entender o que são Métodos Ágeis
 -  Entender o que é Kanban
@@ -33,3 +35,4 @@ O fron-end-online-store foi um projeto feito durante meu período na trybe, com 
 -   npm install
 -   npm start
 ##### Aplicação:
+<a href="https://front-end-online.netlify.app/" target="_blanc"></a>
