@@ -35,6 +35,6 @@ O fron-end-online-store foi um projeto feito durante meu período na trybe, com 
 -   npm install
 -   npm start
 ##### Aplicação:
-- https://appreceitas.netlify.app/
+- https://front-end-online.netlify.app/
 
 <p align="center">Obrigado!</p>
